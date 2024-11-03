@@ -1,3 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.Meet {
+  visibility: visible;
+  transition: all 0.3s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 20%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:py-\[120px\] {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:gap-20 {
+    gap: 5rem;
+  }
+}
+.btn-rounded-full {
+  max-height: 60px;
+  z-index: 10;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.5s ease-in-out;
+  padding: 20px 30px;
+  border-radius: 45px;
+  background-color: var(--primary);
+  color: var(--cream-foreground);
+  line-height: normal;
+  border: 2px solid transparent;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+.container {
+  padding: 35px;
+  margin: 10px;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.pt-7\.5 {
+  padding-top: 30px;
+}
